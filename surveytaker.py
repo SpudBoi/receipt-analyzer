@@ -8,3 +8,29 @@ redeem the voucher.
 """
 
 from selenium import webdriver
+import tkinter as tk
+import os
+
+path = os.getcwd()
+
+colors = ['#fff6de']
+
+def user_interface():
+
+    window = tk.Tk()
+    window.resizable(False,False)
+
+    #configuring main window
+    window.title("McDonald's Survey Bot")
+    window.geometry('300x400')
+    window.configure(bg = colors[0])
+
+    chan = tk.PhotoImage(file = path + "\\visual_assets\\mcdonalds-chan.png")
+    tk.Label(window, image = chan, bg = colors[0]).place(x=42,y=100)
+
+    window.mainloop()
+
+
+######################3333333333333333333333333333333
+
+user_interface()
